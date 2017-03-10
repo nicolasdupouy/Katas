@@ -18,4 +18,17 @@ public class FizzBuzzTest {
     }
 
 
+    @Test
+    public void should_display_fizz_when_multiple_of_3() {
+        // Given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        // When
+        String result = fizzbuzz.display(9);
+
+        // Then
+        Assertions.assertEquals("fizz", result);
+    }
+
+
 }
