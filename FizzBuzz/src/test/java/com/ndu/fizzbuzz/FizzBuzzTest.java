@@ -1,6 +1,5 @@
 package com.ndu.fizzbuzz;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -42,6 +41,18 @@ public class FizzBuzzTest {
 
         // Then
         assertEquals("fizz", result);
+    }
+
+    @Test
+    public void should_display_buzz_when_multiple_of_5() {
+        // Given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        // When
+        String result = fizzbuzz.display(25);
+
+        // Then
+        assertEquals("buzz", result);
     }
 
 
