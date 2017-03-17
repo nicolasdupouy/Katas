@@ -55,5 +55,17 @@ public class FizzBuzzTest {
         assertEquals("buzz", result);
     }
 
+    @Test
+    public void should_display_fizzbuzz_when_multiple_of_3_and_5() {
+        // Given
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        // When
+        String result = fizzbuzz.display(15);
+
+        // Then
+        assertEquals("fizzbuzz", result);
+    }
+
 
 }
