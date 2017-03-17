@@ -6,6 +6,10 @@ public class FizzBuzz {
     public static final String BUZZ = "buzz";
 
     public String display(int number) {
+        if (isMultipleOfThree(number)
+                && ismultipleOfFive(number)) {
+            return "fizzbuzz";
+        }
         if (isMultipleOfThree(number)) {
             return FIZZ;
         }
