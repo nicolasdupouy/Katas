@@ -6,11 +6,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
 
+    // Given
+    private FizzBuzz fizzbuzz = new FizzBuzz();
+
     @Test
     public void should_display_1_when_1() {
-        // Given
-        FizzBuzz fizzbuzz = new FizzBuzz();
-
         // When
         String result = fizzbuzz.display(1);
 
@@ -20,9 +20,6 @@ public class FizzBuzzTest {
 
     @Test
     public void should_display_n_when_n() {
-        // Given
-        FizzBuzz fizzbuzz = new FizzBuzz();
-
         // When
         String result = fizzbuzz.display(2);
 
@@ -33,9 +30,6 @@ public class FizzBuzzTest {
 
     @Test
     public void should_display_fizz_when_multiple_of_3() {
-        // Given
-        FizzBuzz fizzbuzz = new FizzBuzz();
-
         // When
         String result = fizzbuzz.display(9);
 
@@ -45,9 +39,6 @@ public class FizzBuzzTest {
 
     @Test
     public void should_display_buzz_when_multiple_of_5() {
-        // Given
-        FizzBuzz fizzbuzz = new FizzBuzz();
-
         // When
         String result = fizzbuzz.display(25);
 
@@ -57,9 +48,6 @@ public class FizzBuzzTest {
 
     @Test
     public void should_display_fizzbuzz_when_multiple_of_3_and_5() {
-        // Given
-        FizzBuzz fizzbuzz = new FizzBuzz();
-
         // When
         String result = fizzbuzz.display(15);
 

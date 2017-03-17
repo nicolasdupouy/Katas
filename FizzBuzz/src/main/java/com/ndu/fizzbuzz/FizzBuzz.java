@@ -2,21 +2,21 @@ package com.ndu.fizzbuzz;
 
 public class FizzBuzz {
 
+    public static final String EMPTY_STRING = "";
     public static final String FIZZ = "fizz";
     public static final String BUZZ = "buzz";
 
     public String display(int number) {
-        if (isMultipleOfThree(number)
-                && ismultipleOfFive(number)) {
-            return "fizzbuzz";
-        }
+        String resultDisplayed = EMPTY_STRING;
         if (isMultipleOfThree(number)) {
-            return FIZZ;
+            resultDisplayed += FIZZ;
         }
         if (ismultipleOfFive(number)) {
-            return BUZZ;
+            resultDisplayed += BUZZ;
         }
-        return String.valueOf(number);
+        return resultDisplayed == EMPTY_STRING
+                ? String.valueOf(number)
+                : resultDisplayed;
     }
 
     private boolean ismultipleOfFive(int number) {
